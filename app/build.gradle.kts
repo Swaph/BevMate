@@ -52,5 +52,21 @@ dependencies {
     implementation(libs.glide)
     annotationProcessor(libs.glideCompiler)
 
+    configurations.all {
+        resolutionStrategy.eachDependency {
+            if (requested.group == "androidx.lifecycle" && requested.name == "lifecycle-common") {
+                useVersion("2.6.2")
+            }
+            if (requested.group == "org.jetbrains.kotlinx" && requested.name == "kotlinx-coroutines-play-services") {
+                useVersion("1.7.3")
+            }
+            if (requested.group == "androidx.fragment" && requested.name == "fragment-ktx") {
+                useVersion("1.6.2")
+            }
+            if (requested.group == "com.google.android.gms" && requested.name == "play-services-tasks") {
+                useVersion("18.0.2")
+            }
+        }
+    }
 
 }
