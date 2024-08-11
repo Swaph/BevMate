@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/primaryLightColor"
+    tools:context=".fragments.user.OrderFragment">
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price: Ksh 0"
+        android:textSize="18sp"
+        android:textColor="@color/primaryDarkColor"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_price"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="1080dp"
+    android:height="1920dp"
+    android:viewportWidth="1080"
+    android:viewportHeight="1920">
+
+    <!-- Add your wave pattern here -->
+    <path
+        android:fillColor="@color/primaryLightColor"
+        android:pathData="M0,0 L1080,0 L1080,960 C720,960 540,1440 0,1440 Z"/>
+</vector>

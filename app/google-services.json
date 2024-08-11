@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1054352120093",
+    "project_id": "bevmate-76983",
+    "storage_bucket": "bevmate-76983.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054352120093:android:9399e32d2a9ff0a99969f4",
+        "android_client_info": {
+          "package_name": "com.example.bevmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU6P3uaaCwRJnfKmCga6GDNqLNQwS46fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

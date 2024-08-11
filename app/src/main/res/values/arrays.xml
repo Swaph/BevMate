@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="quantity_options">
+        <item>250ml</item>
+        <item>500ml</item>
+        <item>1L</item>
+    </string-array>
+</resources>

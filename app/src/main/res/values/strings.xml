@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">BevMate</string>
+    <string name="drink_name">Drink Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="app_logo_desc">App logo</string>
+    <string name="background_design_desc">Background design</string>
+    <string name="welcome_message">Welcome to BevMate! Enjoy your refreshing drinks.</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="back_button_desc">Back button</string>
+    <string name="drink_image_desc">Image of the drink</string>
+    <string name="quantity">Quantity:</string>
+    <string name="add">Add</string>
+    <string name="description_of_the_drink">Description of the drink</string>
+    <string name="price_format">Ksh %d</string>
+    <string name="drink_description">Drink Description</string>
+    <string name="home">Home</string>
+    <string name="order">Order</string>
+    <string name="profile">Profile</string>
+    <string name="tab_layout">Tab layout</string>
+    <string name="username">Username</string>
+    <string name="my_orders">My Orders</string>
+    <string name="logout">Log Out</string>
+    <string name="profile_picture">Profile Picture</string>
+
+    <!-- Order Activity Strings -->
+    <string name="product_list">Product List</string>
+    <string name="product_name_1">Mocha</string>
+    <string name="product_name_2">Macchiato</string>
+    <string name="total_price">Total Price</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="payment_channels">Payment Channels</string>
+    <string name="decrease_quantity_desc">Decrease quantity</string>
+    <string name="increase_quantity_desc">Increase quantity</string>
+
+    <!-- Profile Activity Strings -->
+    <string name="profile_picture_desc">Profile Picture</string>
+    <string name="edit_password">Edit password</string>
+    <string name="edit_email">Edit email</string>
+    <string name="edit_username">Edit Username\n</string>
+    <string name="confirm">Confirm</string>
+    <string name="save">Save</string>
+    <string name="product_name">Product Name</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="view_pending_orders">View pending orders</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="drink_image">Drink Image</string>
+</resources>

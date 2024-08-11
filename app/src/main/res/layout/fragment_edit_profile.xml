@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:background="@color/primaryLightColor"
+    tools:context=".fragments.user.EditProfileFragment">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="@string/profile_image"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- User's Name (Editable) -->
+    <EditText
+        android:id="@+id/et_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:hint="Username"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <!-- User's Email (Editable) -->
+    <EditText
+        android:id="@+id/et_profile_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_profile_name"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <!-- User's Password (Editable) -->
+    <EditText
+        android:id="@+id/et_profile_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_profile_email"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <!-- Save Changes Button -->
+    <Button
+        android:id="@+id/btn_save_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_profile_password"
+        android:layout_marginTop="32dp"
+        android:text="Save Changes"
+        android:background="@drawable/button_orange_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+</RelativeLayout>

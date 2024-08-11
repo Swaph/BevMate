@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/primaryLightColor">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="@string/profile_image"/>
+
+    <!-- User's Name -->
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:text="User Name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- User's Email -->
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="user@example.com"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Edit Profile"
+        android:background="@drawable/button_gray_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- My Orders Button -->
+    <Button
+        android:id="@+id/btn_my_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_edit_profile"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_orange_background"
+        android:text="My Orders"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Log Out Button (Blue) -->
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_my_orders"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_blue_background"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Delete Account Button (Red) -->
+    <Button
+        android:id="@+id/btn_delete_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_logout"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_red_background"
+        android:text="Delete Account"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+</RelativeLayout>

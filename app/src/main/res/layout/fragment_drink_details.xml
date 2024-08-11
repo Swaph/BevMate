@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/primaryLightColor"
+    tools:context=".fragments.user.DrinkDetailsFragment">
+
+    <!-- Drink Image -->
+    <ImageView
+        android:id="@+id/drink_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/drink_image"/>
+
+    <!-- Drink Name -->
+    <TextView
+        android:id="@+id/drink_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink_image"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="24sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Drink Description -->
+    <TextView
+        android:id="@+id/drink_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink_name"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <!-- Price Based on Quantity -->
+    <TextView
+        android:id="@+id/drink_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink_description"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Quantity Decrease Button -->
+    <Button
+        android:id="@+id/btn_decrease_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drink_price"
+        android:layout_marginTop="16dp"
+        android:text="-"
+        android:background="@color/primaryColor"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Quantity Increase Button -->
+    <Button
+        android:id="@+id/btn_increase_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_decrease_quantity"
+        android:layout_alignTop="@id/btn_decrease_quantity"
+        android:layout_marginLeft="8dp"
+        android:text="+"
+        android:background="@color/primaryColor"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"/>
+
+    <!-- Add to Cart Button -->
+    <Button
+        android:id="@+id/btn_add_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_decrease_quantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@color/accentColor"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Add to Cart"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>

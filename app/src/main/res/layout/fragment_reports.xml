@@ -1,0 +1,81 @@
+<!-- res/layout/fragment_reports.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Orders Summary -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Orders Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Orders: 0"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sales Summary -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sales Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_sales"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Sales: $0.00"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Stock Summary -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stock Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_low_stock_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Low Stock Items: 0"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Customers Summary -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Customers Summary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_customers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Customers: 0"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

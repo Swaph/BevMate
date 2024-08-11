@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".activities.LoginActivity">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/background_design"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_design"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/background_design_desc"/>
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_logo"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/app_logo_desc" />
+
+    <!-- Tagline Text -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="BevMate: Get the Taste of Value!"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_italic"
+        android:textSize="14sp"
+        android:textStyle="italic"/>
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Email"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/poppins_regular" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:hint="Password"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/poppins_regular" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_marginTop="32dp"
+        android:layout_marginHorizontal="32dp"
+        android:text="Login"
+        android:background="@drawable/button_green_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- ProgressBar for loading indication -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- Don't have an account text and register button -->
+    <TextView
+        android:id="@+id/register_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Don't have an account?"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_prompt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Register"
+        android:background="@drawable/button_orange_background"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="12dp"
+        android:textSize="14sp" />
+
+</RelativeLayout>
