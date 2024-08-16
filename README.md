@@ -61,7 +61,4 @@ The **BevMate** app is built to streamline the process of managing a beverage bu
 - **Analytics Dashboard:** Expand the Admin Dashboard to include more detailed analytics and insights.
 - **Multi-language Support:** Add support for multiple languages to cater to a broader audience.
 
-## Conclusion
-
-**BevMate** is a comprehensive solution for managing beverage businesses, offering features that enhance both customer experience and administrative efficiency. The project showcases strong skills in Android development, Firebase integration, and user interface design, making it a valuable addition to any portfolio.
 
